@@ -95,4 +95,10 @@ print(sqrt(100)) #10.0
 #-----------------------------------------------------getting user's input--------------------------------------------------------------------
 animal = input('Input Your Fav Animal: ') # saving the input that user type in a variable called animal
 flower = input('Input Your Fav Flower: ')
-print('Your fav animal is ' + animal + ' and your fav flower is ' + flower)
+age= int(input('Input your age: ')) # this is integer not a string
+print('Your fav animal is ' + animal + ' and your fav flower is ' + flower + ' also you are', age, 'years old')
+
+
+
+#--------------------------------------------------simple word replacement program--------------------------------------------------
+sentence = input('Enter your sentence')
