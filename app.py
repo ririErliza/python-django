@@ -52,5 +52,7 @@ print(fruit.lower())
 print(fruit.isupper()) #false coz must all uppercase
 print(fruit.upper().isupper()) #true
 print(fruit) #Banana
-print(len(name)) #3
+print(len(name)) #3 to get the length of a string
+print(fruit.index('a')) # 1
+print(fruit.replace('a', 'i')) #Binini
 
