@@ -100,9 +100,14 @@ print(sqrt(100)) #10.0
 
 
 
-#--------------------------------------------------simple word replacement--------------------------------------------------
-sentence = input('Enter your sentence: ')
-print('Your sentence is: ', sentence)
-word1 = input('Enter the word to replace: ')
-word2 = input('Enter the word to replace it with: ')
-print(sentence.replace(word1,word2))
+#-----------------------------------------------------simple word replacement-----------------------------------------------------------
+# sentence = input('Enter your sentence: ')
+# print('Your sentence is: ', sentence)
+# word1 = input('Enter the word to replace: ')
+# word2 = input('Enter the word to replace it with: ')
+# print(sentence.replace(word1,word2))
+
+#------------------------------------------------------------LIST---------------------------------------------------------------------
+
+countries = ['UK', 'Ghana', 'Nigeria', 'Australia']
+print(countries) # ['UK', 'Ghana', 'Nigeria', 'Australia']
