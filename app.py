@@ -111,7 +111,8 @@ print(sqrt(100)) #10.0
 
 countries = ['UK', 'Ghana', 'Nigeria', 'Australia']
 print(countries) # ['UK', 'Ghana', 'Nigeria', 'Australia']
-print(countries[0]) # ['UK']
+print(countries[0]) # UK
+print(countries[-1]) # Australia  --- will get the value from the back
 print(countries[2][0]) # N   --- getting the initial letter of the country at index 2
 print(countries[1:]) # ['Ghana', 'Nigeria', 'Australia']
 print(countries[2:4]) # ['Nigeria', 'Australia']
@@ -119,3 +120,5 @@ print(type(countries)) # <class 'list'>
 
 countries[0] = 'USA'  # replace UK with USA
 print(countries) # ['USA', 'Ghana', 'Nigeria', 'Australia']
+
+print(len(countries)) #4
