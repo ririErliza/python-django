@@ -132,3 +132,6 @@ print(type(countries[2])) # <class 'int'>
 print(type(countries[3])) # <class 'bool'>
 
 print(countries)
+
+laptops =list(('Dell', 'HP', 'Lenovo', 'MAC'))  #another way to create a list
+print(laptops) # ['Dell', 'HP', 'Lenovo', 'MAC']
