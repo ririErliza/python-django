@@ -122,3 +122,13 @@ countries[0] = 'USA'  # replace UK with USA
 print(countries) # ['USA', 'Ghana', 'Nigeria', 'Australia']
 
 print(len(countries)) #4
+
+countries [2] = 2
+countries [3] = True
+
+
+
+print(type(countries[2])) # <class 'int'>
+print(type(countries[3])) # <class 'bool'>
+
+print(countries)
