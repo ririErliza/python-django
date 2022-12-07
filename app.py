@@ -116,3 +116,6 @@ print(countries[2][0]) # N   --- getting the initial letter of the country at in
 print(countries[1:]) # ['Ghana', 'Nigeria', 'Australia']
 print(countries[2:4]) # ['Nigeria', 'Australia']
 print(type(countries)) # <class 'list'>
+
+countries[0] = 'USA'  # replace UK with USA
+print(countries) # ['USA', 'Ghana', 'Nigeria', 'Australia']
