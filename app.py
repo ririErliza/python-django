@@ -93,13 +93,16 @@ from math import * # importing everything with this asterix
 print(sqrt(100)) #10.0
 
 #-----------------------------------------------------getting user's input--------------------------------------------------------------------
-animal = input('Input Your Fav Animal: ') # saving the input that user type in a variable called animal
-flower = input('Input Your Fav Flower: ')
-age= int(input('Input your age: ')) # this is integer not a string
-print('Your fav animal is ' + animal + ' and your fav flower is ' + flower + ' also you are', age, 'years old')
+# animal = input('Input Your Fav Animal: ') # saving the input that user type in a variable called animal
+# flower = input('Input Your Fav Flower: ')
+# age= int(input('Input your age: ')) # this is integer not a string
+# print('Your fav animal is ' + animal + ' and your fav flower is ' + flower + ' also you are', age, 'years old')
 
 
 
 #--------------------------------------------------simple word replacement--------------------------------------------------
 sentence = input('Enter your sentence: ')
-print(sentence)
+print('Your sentence is: ', sentence)
+word1 = input('Enter the word to replace: ')
+word2 = input('Enter the word to replace it with: ')
+print(sentence.replace(word1,word2))
