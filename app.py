@@ -100,5 +100,6 @@ print('Your fav animal is ' + animal + ' and your fav flower is ' + flower + ' a
 
 
 
-#--------------------------------------------------simple word replacement program--------------------------------------------------
-sentence = input('Enter your sentence')
+#--------------------------------------------------simple word replacement--------------------------------------------------
+sentence = input('Enter your sentence: ')
+print(sentence)
