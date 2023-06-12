@@ -136,4 +136,22 @@ print(countries)
 laptops =list(('Dell', 'HP', 'Lenovo', 'MAC'))  #another way to create a list
 print(laptops) # ['Dell', 'HP', 'Lenovo', 'MAC']
 
-#------------------------------------------------------------LIST METHODS---------------------------------------------------------------
+#-----------------LIST METHODS------------------
+list1 =[1,2,3,4,5]
+list2 = ['banana', 'apples', 'mangos','oranges']
+
+#joining list
+list1.extend(list2)
+print(list1)
+#answer: [1, 2, 3, 4, 5, 'banana', 'apples', 'mangos', 'oranges']
+
+#adding data to the list
+list2.append('cherries')
+print(list2)
+#answer:['banana', 'apples', 'mangos', 'oranges', 'cherries']
+
+#getting the length of the list
+print(len(list2))
+#answer: 5
+print(len(list1))
+#answer: 9
