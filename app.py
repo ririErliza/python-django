@@ -296,8 +296,8 @@ def greetings_function(name, age):
     print('Welcome '+ name + ' . You are '+ str(age)+ ' years old.')
 
 
-name = input('Enter your name: ')
-age = input('Enter your age: ')
+#name = input('Enter your name: ')
+#age = input('Enter your age: ')
 # greetings_function(name, age)
 
 
@@ -310,7 +310,52 @@ age = input('Enter your age: ')
 def add_numbers(num1, num2):
     return num1 + num2
 
-print(add_numbers(1,2)) # 3
+# print(add_numbers(1,2)) # 3
+
+# num1=int(input('Enter first number: '))
+# num2=int(input('Enter second number: '))
+
+# print(add_numbers(num1,num2))
+# Enter first number: 3
+# Enter second number: 6
+# 9
+
+def add_numbers(num1, num2):
+    print('The total is ')
+    return num1 + num2
+
+# num1=int(input('Enter first number: '))
+# num2=int(input('Enter second number: '))
+
+# print(add_numbers(num1,num2))
+# Enter first number: 5
+# Enter second number: 9
+# The total is
+# 14
+
+def add_numbers(num1, num2):
+    return num1 + num2
+    print('The total is ') # this wont be print out because return statement is the end of the function
+
+# num1=int(input('Enter first number: '))
+# num2=int(input('Enter second number: '))
+
+# print(add_numbers(num1,num2))
+# Enter first number: 3
+# Enter second number: 4
+# 7
+
+
+#----------------------------IF------------------------------------
+
+a = 4
+b = 3
+
+if a > b:
+    print(str(a) + 'is greater than ' + str(b))
+# this code will only be executed if a greater than b, otherwise the code wont be executed
+
+
 
 
 
