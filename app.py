@@ -150,8 +150,24 @@ list2.append('cherries')
 print(list2)
 #answer:['banana', 'apples', 'mangos', 'oranges', 'cherries']
 
+list2.insert(1,'pears')
+print(list2)
+#answer : ['banana', 'pears', 'apples', 'mangos', 'oranges', 'cherries']
+# data inserted at specific position
+
+#removing data from list
+list2.remove('banana')
+list2.remove('oranges')
+list2.remove('apples')
+print(list2)
+#answer : ['pears', 'mangos', 'cherries']
+
 #getting the length of the list
 print(len(list2))
 #answer: 5
 print(len(list1))
 #answer: 9
+
+#emptying thee list
+list1.clear()
+print(list1) # [] (the list is now empty)
