@@ -1,173 +1,316 @@
-#---------------------------------------------------printing----------------------------------------------------------------------
+# #---------------------------------------------------printing----------------------------------------------------------------------
 
-print('Hello World, welcome')
-print('Welcome')
-print('My Name is Lili I am', 100, 'years')
-
-
-#---------------------------------------------------variables-----------------------------------------------------------------------
-
-name = 'Tim'
-
-"""
-name is the name of variable
-
-'Tim' is the value
-"""
-
-print(name)
-
-print(name + 'is a boy')
-print(name + 'is 18')
-print(name + 'is from Turkey')
-
-#-----------------------------------------------------data types : string--------------------------------------------------------------------
+# print('Hello World, welcome')
+# print('Welcome')
+# print('My Name is Lili I am', 100, 'years')
 
 
+# #---------------------------------------------------variables-----------------------------------------------------------------------
 
-name = 'Roy'
-age = 18
+# name = 'Tim'
 
-print(name)
-print(name + 'is a boy')
-print(name,'is', age)
+# """
+# name is the name of variable
 
+# 'Tim' is the value
+# """
 
-"""
-string
-number/integer
-boolean
-"""
+# print(name)
 
-##### String #####
+# print(name + 'is a boy')
+# print(name + 'is 18')
+# print(name + 'is from Turkey')
 
-print('Hi. How are you')
-print('Hi. \nHow are you')
-print('Hi. \'How are you\'') #using backslash to show a quote
-
-fruit = 'Banana'
-print(fruit[2]) #print letter at index 2
-print(fruit.upper())
-print(fruit.islower()) #false coz must all lowercase
-print(fruit.lower())
-print(fruit.isupper()) #false coz must all uppercase
-print(fruit.upper().isupper()) #true
-print(fruit) #Banana
-print(len(name)) #3 to get the length of a string
-print(fruit.index('a')) # 1
-print(fruit.replace('a', 'i')) #Binini
-
-
-#-----------------------------------------------------data types : number/integer --------------------------------------------------------------------
-
-print(75) # print number directly
-
-number = 79
-print(number) # print variable with value of integer/number
-
-print(1+2)  # perform arithmatic operation
-print(2.5 + 1.25)
-print( 64/8)
-print(5*3)
-print(20%6)
-
-number2 = str(number) #convert number to string
-print(number2)
-# print('number is' + number) #concatenate string with number will give error result
-print('this is the number ' + number2) #work out because number2 is already converted to string
-
-print(-5)
-print(abs(-5)) #will give absolute number of this value, 5
-print(max(4,1,6)) #get highest number, 6
-print(min(2,1,-3)) # -3
-print(round(3.5)) #4
-print(bin(3)) # return the binary string, 0b11
-
-# methods above are built in
-# there are methods that need importing  math library first
-
-
-###### number method that we need to import first ########
-from math import * # importing everything with this asterix
-
-print(sqrt(100)) #10.0
-
-#-----------------------------------------------------getting user's input--------------------------------------------------------------------
-# animal = input('Input Your Fav Animal: ') # saving the input that user type in a variable called animal
-# flower = input('Input Your Fav Flower: ')
-# age= int(input('Input your age: ')) # this is integer not a string
-# print('Your fav animal is ' + animal + ' and your fav flower is ' + flower + ' also you are', age, 'years old')
+# #-----------------------------------------------------data types : string--------------------------------------------------------------------
 
 
 
-#-----------------------------------------------------simple word replacement-----------------------------------------------------------
-# sentence = input('Enter your sentence: ')
-# print('Your sentence is: ', sentence)
-# word1 = input('Enter the word to replace: ')
-# word2 = input('Enter the word to replace it with: ')
-# print(sentence.replace(word1,word2))
+# name = 'Roy'
+# age = 18
 
-#------------------------------------------------------------LIST---------------------------------------------------------------------
-
-countries = ['UK', 'Ghana', 'Nigeria', 'Australia']
-print(countries) # ['UK', 'Ghana', 'Nigeria', 'Australia']
-print(countries[0]) # UK
-print(countries[-1]) # Australia  --- will get the value from the back
-print(countries[2][0]) # N   --- getting the initial letter of the country at index 2
-print(countries[1:]) # ['Ghana', 'Nigeria', 'Australia']
-print(countries[2:4]) # ['Nigeria', 'Australia']
-print(type(countries)) # <class 'list'>
-
-countries[0] = 'USA'  # replace UK with USA
-print(countries) # ['USA', 'Ghana', 'Nigeria', 'Australia']
-
-print(len(countries)) #4
-
-countries [2] = 2
-countries [3] = True
+# print(name)
+# print(name + 'is a boy')
+# print(name,'is', age)
 
 
+# """
+# string
+# number/integer
+# boolean
+# """
 
-print(type(countries[2])) # <class 'int'>
-print(type(countries[3])) # <class 'bool'>
+# ##### String #####
 
-print(countries)
+# print('Hi. How are you')
+# print('Hi. \nHow are you')
+# print('Hi. \'How are you\'') #using backslash to show a quote
 
-laptops =list(('Dell', 'HP', 'Lenovo', 'MAC'))  #another way to create a list
-print(laptops) # ['Dell', 'HP', 'Lenovo', 'MAC']
+# fruit = 'Banana'
+# print(fruit[2]) #print letter at index 2
+# print(fruit.upper())
+# print(fruit.islower()) #false coz must all lowercase
+# print(fruit.lower())
+# print(fruit.isupper()) #false coz must all uppercase
+# print(fruit.upper().isupper()) #true
+# print(fruit) #Banana
+# print(len(name)) #3 to get the length of a string
+# print(fruit.index('a')) # 1
+# print(fruit.replace('a', 'i')) #Binini
 
-#-----------------LIST METHODS------------------
-list1 =[1,2,3,4,5]
-list2 = ['banana', 'apples', 'mangos','oranges']
 
-#joining list
-list1.extend(list2)
-print(list1)
-#answer: [1, 2, 3, 4, 5, 'banana', 'apples', 'mangos', 'oranges']
+# #-----------------------------------------------------data types : number/integer --------------------------------------------------------------------
 
-#adding data to the list
-list2.append('cherries')
-print(list2)
-#answer:['banana', 'apples', 'mangos', 'oranges', 'cherries']
+# print(75) # print number directly
 
-list2.insert(1,'pears')
-print(list2)
-#answer : ['banana', 'pears', 'apples', 'mangos', 'oranges', 'cherries']
-# data inserted at specific position
+# number = 79
+# print(number) # print variable with value of integer/number
 
-#removing data from list
-list2.remove('banana')
-list2.remove('oranges')
-list2.remove('apples')
-print(list2)
-#answer : ['pears', 'mangos', 'cherries']
+# print(1+2)  # perform arithmatic operation
+# print(2.5 + 1.25)
+# print( 64/8)
+# print(5*3)
+# print(20%6)
 
-#getting the length of the list
-print(len(list2))
-#answer: 5
-print(len(list1))
-#answer: 9
+# number2 = str(number) #convert number to string
+# print(number2)
+# # print('number is' + number) #concatenate string with number will give error result
+# print('this is the number ' + number2) #work out because number2 is already converted to string
 
-#emptying thee list
-list1.clear()
-print(list1) # [] (the list is now empty)
+# print(-5)
+# print(abs(-5)) #will give absolute number of this value, 5
+# print(max(4,1,6)) #get highest number, 6
+# print(min(2,1,-3)) # -3
+# print(round(3.5)) #4
+# print(bin(3)) # return the binary string, 0b11
+
+# # methods above are built in
+# # there are methods that need importing  math library first
+
+
+# ###### number method that we need to import first ########
+# from math import * # importing everything with this asterix
+
+# print(sqrt(100)) #10.0
+
+# #-----------------------------------------------------getting user's input--------------------------------------------------------------------
+# # animal = input('Input Your Fav Animal: ') # saving the input that user type in a variable called animal
+# # flower = input('Input Your Fav Flower: ')
+# # age= int(input('Input your age: ')) # this is integer not a string
+# # print('Your fav animal is ' + animal + ' and your fav flower is ' + flower + ' also you are', age, 'years old')
+
+
+
+# #-----------------------------------------------------simple word replacement-----------------------------------------------------------
+# # sentence = input('Enter your sentence: ')
+# # print('Your sentence is: ', sentence)
+# # word1 = input('Enter the word to replace: ')
+# # word2 = input('Enter the word to replace it with: ')
+# # print(sentence.replace(word1,word2))
+
+# #------------------------------------------------------------LIST---------------------------------------------------------------------
+
+# countries = ['UK', 'Ghana', 'Nigeria', 'Australia']
+# print(countries) # ['UK', 'Ghana', 'Nigeria', 'Australia']
+# print(countries[0]) # UK
+# print(countries[-1]) # Australia  --- will get the value from the back
+# print(countries[2][0]) # N   --- getting the initial letter of the country at index 2
+# print(countries[1:]) # ['Ghana', 'Nigeria', 'Australia']
+# print(countries[2:4]) # ['Nigeria', 'Australia']
+# print(type(countries)) # <class 'list'>
+
+# countries[0] = 'USA'  # replace UK with USA
+# print(countries) # ['USA', 'Ghana', 'Nigeria', 'Australia']
+
+# print(len(countries)) #4
+
+# countries [2] = 2
+# countries [3] = True
+
+
+
+# print(type(countries[2])) # <class 'int'>
+# print(type(countries[3])) # <class 'bool'>
+
+# print(countries)
+
+# laptops =list(('Dell', 'HP', 'Lenovo', 'MAC'))  #another way to create a list
+# print(laptops) # ['Dell', 'HP', 'Lenovo', 'MAC']
+
+# #-----------------LIST METHODS------------------
+# list1 =[1,2,3,4,5]
+# list2 = ['banana', 'apples', 'mangos','oranges']
+
+# #joining list
+# list1.extend(list2)
+# print(list1)
+# #answer: [1, 2, 3, 4, 5, 'banana', 'apples', 'mangos', 'oranges']
+
+# #adding data to the list
+# list2.append('cherries')
+# print(list2)
+# #answer:['banana', 'apples', 'mangos', 'oranges', 'cherries']
+
+# list2.insert(1,'pears')
+# print(list2)
+# #answer : ['banana', 'pears', 'apples', 'mangos', 'oranges', 'cherries']
+# # data inserted at specific position
+
+# #finding data at certain position
+# print(list2.index('mangos')) #3
+
+
+
+# #getting the length of the list
+# print(len(list2)) #-- 6
+# print(len(list1)) #-- 9
+
+# #removing data from list
+# list2.remove('banana')
+# list2.remove('oranges')
+# list2.remove('apples')
+# print(list2)
+# #answer : ['pears', 'mangos', 'cherries']
+
+
+# #knowing how many times values appearing in the list
+# print(list2.count('mangos')) # 1 (appear just 1)
+# print(list2.count('apples')) # 0 (coz we had removed it from the list)
+
+
+# #emptying thee list
+# list1.clear()
+# print(list1) # [] (the list is now empty)
+
+# list3 = [3,5,7,1,2,8,4,3,0]
+# #sorting the list
+# list3.sort()
+# print(list3) # [0, 1, 2, 3, 3, 4, 5, 7, 8]
+
+# list3.reverse()
+# print(list3) # [8, 7, 5, 4, 3, 3, 2, 1, 0]
+
+# #copying list to new variable
+# list4 = list3.copy()
+# print(list4) # [8, 7, 5, 4, 3, 3, 2, 1, 0]
+
+# #remove the last value in the list
+# list4.pop()
+# print(list4) # [8, 7, 5, 4, 3, 3, 2, 1]
+
+# #remove certain value
+# list4.pop(0)
+# print(list4) #[7, 5, 4, 3, 3, 2, 1]
+
+# del list4[0]
+# print(list4) #[5, 4, 3, 3, 2, 1]
+
+# #del the list
+# del list3
+# #print(list3) #if we print now we will get : NameError: name 'list3' is not defined. -- because the code is deleted so it doesnt exist anymore and cant be printed
+
+
+#----------------------------TUPLES-------------------------------
+
+#tuples are used to store multiple items in a single variable
+#tuples are immutable - we can't change any value in a tupple
+
+three_numbers = (1,2,3)
+print(three_numbers) # (1, 2, 3)
+
+print(three_numbers[0])  # 1
+
+
+
+four_numbers = (1,2,3,1) #repetition in tupple is fine
+
+# length of tupple
+print(len(four_numbers))  # 4
+
+# type
+print(type(four_numbers)) # <class 'tuple'>
+
+# tupple allows various data types
+strings = ('home', 'land', 'earth')
+boo = (True, False, True)
+mix = (1, 'Home', True, 'Land')
+
+print(type(mix[0])) # <class 'int'>
+
+#assigning new value to tupple
+#three_numbers[1] = 23
+# print(three_numbers) # TypeError: 'tuple' object does not support item assignment
+# because we cannot change values in tupple
+
+
+#---------------------------FUNCTIONS-----------------------------
+
+# a block of code which performs a particular tasks
+# remember in python indentation is very important
+
+def greetings_function():
+    print('Welcome User')
+
+#now this is our of the function
+#we call the function
+greetings_function() # Welcome User
+
+# passing arguments / parameters
+
+def greetings_function(name):
+    print('Welcome '+ name)
+
+greetings_function('John') # Welcome John
+
+# greetings_function(34) # TypeError: can only concatenate str (not "int") to str
+
+# solving
+
+def greetings_function(name):
+    print('Welcome '+ str(name))
+
+greetings_function(34) # Welcome 34
+
+# passing 2 params
+
+def greetings_function(name, age):
+    print('Welcome '+ name + ' . You are '+ str(age)+ ' years old.')
+
+
+greetings_function('Jack',27) # Welcome Jack . You are 27 years old.
+greetings_function(name = 'Jack',age=27) #' the same thing'
+# using asteriks * if we dont know what we are passing
+
+def greetings_function(*names):
+    print('Welcome '+ names[1]) #passing the index is necessary
+
+greetings_function('Jack', 'Jill', 'Zoe')
+
+#def greetings_function(*names):
+   # print('Welcome '+ names)    --- this will result an error
+
+# greetings_function('Jack', 'Jill', 'Zoe') # TypeError: can only concatenate str (not "tuple") to str
+
+
+# using input from users
+def greetings_function(name, age):
+    print('Welcome '+ name + ' . You are '+ str(age)+ ' years old.')
+
+
+name = input('Enter your name: ')
+age = input('Enter your age: ')
+# greetings_function(name, age)
+
+
+#-------------------------RETURN KEYWORDS-------------------------
+
+# return statement will give us an output / feedback of what has been executed
+# return statement sgows the end of the function
+# we don't write anything after that return keyword
+
+def add_numbers(num1, num2):
+    return num1 + num2
+
+print(add_numbers(1,2)) # 3
+
+
+
