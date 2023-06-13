@@ -209,152 +209,275 @@
 # #print(list3) #if we print now we will get : NameError: name 'list3' is not defined. -- because the code is deleted so it doesnt exist anymore and cant be printed
 
 
-#----------------------------TUPLES-------------------------------
+# #----------------------------TUPLES-------------------------------
 
-#tuples are used to store multiple items in a single variable
-#tuples are immutable - we can't change any value in a tupple
+# #tuples are used to store multiple items in a single variable
+# #tuples are immutable - we can't change any value in a tupple
 
-three_numbers = (1,2,3)
-print(three_numbers) # (1, 2, 3)
+# three_numbers = (1,2,3)
+# print(three_numbers) # (1, 2, 3)
 
-print(three_numbers[0])  # 1
-
-
-
-four_numbers = (1,2,3,1) #repetition in tupple is fine
-
-# length of tupple
-print(len(four_numbers))  # 4
-
-# type
-print(type(four_numbers)) # <class 'tuple'>
-
-# tupple allows various data types
-strings = ('home', 'land', 'earth')
-boo = (True, False, True)
-mix = (1, 'Home', True, 'Land')
-
-print(type(mix[0])) # <class 'int'>
-
-#assigning new value to tupple
-#three_numbers[1] = 23
-# print(three_numbers) # TypeError: 'tuple' object does not support item assignment
-# because we cannot change values in tupple
+# print(three_numbers[0])  # 1
 
 
-#---------------------------FUNCTIONS-----------------------------
 
-# a block of code which performs a particular tasks
-# remember in python indentation is very important
+# four_numbers = (1,2,3,1) #repetition in tupple is fine
 
-def greetings_function():
-    print('Welcome User')
+# # length of tupple
+# print(len(four_numbers))  # 4
 
-#now this is our of the function
-#we call the function
-greetings_function() # Welcome User
+# # type
+# print(type(four_numbers)) # <class 'tuple'>
 
-# passing arguments / parameters
+# # tupple allows various data types
+# strings = ('home', 'land', 'earth')
+# boo = (True, False, True)
+# mix = (1, 'Home', True, 'Land')
 
-def greetings_function(name):
-    print('Welcome '+ name)
+# print(type(mix[0])) # <class 'int'>
 
-greetings_function('John') # Welcome John
-
-# greetings_function(34) # TypeError: can only concatenate str (not "int") to str
-
-# solving
-
-def greetings_function(name):
-    print('Welcome '+ str(name))
-
-greetings_function(34) # Welcome 34
-
-# passing 2 params
-
-def greetings_function(name, age):
-    print('Welcome '+ name + ' . You are '+ str(age)+ ' years old.')
+# #assigning new value to tupple
+# #three_numbers[1] = 23
+# # print(three_numbers) # TypeError: 'tuple' object does not support item assignment
+# # because we cannot change values in tupple
 
 
-greetings_function('Jack',27) # Welcome Jack . You are 27 years old.
-greetings_function(name = 'Jack',age=27) #' the same thing'
-# using asteriks * if we dont know what we are passing
+# #---------------------------FUNCTIONS-----------------------------
 
-def greetings_function(*names):
-    print('Welcome '+ names[1]) #passing the index is necessary
+# # a block of code which performs a particular tasks
+# # remember in python indentation is very important
 
-greetings_function('Jack', 'Jill', 'Zoe')
+# def greetings_function():
+#     print('Welcome User')
 
-#def greetings_function(*names):
-   # print('Welcome '+ names)    --- this will result an error
+# #now this is our of the function
+# #we call the function
+# greetings_function() # Welcome User
 
-# greetings_function('Jack', 'Jill', 'Zoe') # TypeError: can only concatenate str (not "tuple") to str
+# # passing arguments / parameters
 
+# def greetings_function(name):
+#     print('Welcome '+ name)
 
-# using input from users
-def greetings_function(name, age):
-    print('Welcome '+ name + ' . You are '+ str(age)+ ' years old.')
+# greetings_function('John') # Welcome John
 
+# # greetings_function(34) # TypeError: can only concatenate str (not "int") to str
 
-#name = input('Enter your name: ')
-#age = input('Enter your age: ')
-# greetings_function(name, age)
+# # solving
 
+# def greetings_function(name):
+#     print('Welcome '+ str(name))
 
-#-------------------------RETURN KEYWORDS-------------------------
+# greetings_function(34) # Welcome 34
 
-# return statement will give us an output / feedback of what has been executed
-# return statement sgows the end of the function
-# we don't write anything after that return keyword
+# # passing 2 params
 
-def add_numbers(num1, num2):
-    return num1 + num2
-
-# print(add_numbers(1,2)) # 3
-
-# num1=int(input('Enter first number: '))
-# num2=int(input('Enter second number: '))
-
-# print(add_numbers(num1,num2))
-# Enter first number: 3
-# Enter second number: 6
-# 9
-
-def add_numbers(num1, num2):
-    print('The total is ')
-    return num1 + num2
-
-# num1=int(input('Enter first number: '))
-# num2=int(input('Enter second number: '))
-
-# print(add_numbers(num1,num2))
-# Enter first number: 5
-# Enter second number: 9
-# The total is
-# 14
-
-def add_numbers(num1, num2):
-    return num1 + num2
-    print('The total is ') # this wont be print out because return statement is the end of the function
-
-# num1=int(input('Enter first number: '))
-# num2=int(input('Enter second number: '))
-
-# print(add_numbers(num1,num2))
-# Enter first number: 3
-# Enter second number: 4
-# 7
+# def greetings_function(name, age):
+#     print('Welcome '+ name + ' . You are '+ str(age)+ ' years old.')
 
 
-#----------------------------IF------------------------------------
+# greetings_function('Jack',27) # Welcome Jack . You are 27 years old.
+# greetings_function(name = 'Jack',age=27) #' the same thing'
+# # using asteriks * if we dont know what we are passing
 
-a = 4
-b = 3
+# def greetings_function(*names):
+#     print('Welcome '+ names[1]) #passing the index is necessary
 
-if a > b:
-    print(str(a) + 'is greater than ' + str(b))
-# this code will only be executed if a greater than b, otherwise the code wont be executed
+# greetings_function('Jack', 'Jill', 'Zoe')
 
+# #def greetings_function(*names):
+#    # print('Welcome '+ names)    --- this will result an error
+
+# # greetings_function('Jack', 'Jill', 'Zoe') # TypeError: can only concatenate str (not "tuple") to str
+
+
+# # using input from users
+# def greetings_function(name, age):
+#     print('Welcome '+ name + ' . You are '+ str(age)+ ' years old.')
+
+
+# #name = input('Enter your name: ')
+# #age = input('Enter your age: ')
+# # greetings_function(name, age)
+
+
+# #-------------------------RETURN KEYWORDS-------------------------
+
+# # return statement will give us an output / feedback of what has been executed
+# # return statement sgows the end of the function
+# # we don't write anything after that return keyword
+
+# def add_numbers(num1, num2):
+#     return num1 + num2
+
+# # print(add_numbers(1,2)) # 3
+
+# # num1=int(input('Enter first number: '))
+# # num2=int(input('Enter second number: '))
+
+# # print(add_numbers(num1,num2))
+# # Enter first number: 3
+# # Enter second number: 6
+# # 9
+
+# def add_numbers(num1, num2):
+#     print('The total is ')
+#     return num1 + num2
+
+# # num1=int(input('Enter first number: '))
+# # num2=int(input('Enter second number: '))
+
+# # print(add_numbers(num1,num2))
+# # Enter first number: 5
+# # Enter second number: 9
+# # The total is
+# # 14
+
+# def add_numbers(num1, num2):
+#     return num1 + num2
+#     print('The total is ') # this wont be print out because return statement is the end of the function
+
+# # num1=int(input('Enter first number: '))
+# # num2=int(input('Enter second number: '))
+
+# # print(add_numbers(num1,num2))
+# # Enter first number: 3
+# # Enter second number: 4
+# # 7
+
+
+# #----------------------------IF------------------------------------
+
+# a = 5
+# b = 3
+
+# if a > b:
+#     print(str(a) + ' is greater than ' + str(b))
+#     # this code will only be executed if a greater than b, otherwise the code wont be executed
+
+#     # 5 is greater than 3
+
+# a = 3
+# b = 3
+
+# if a == b:
+#     print(str(a) + ' is equal to ' + str(b))
+#     # this code will only be executed if a EQUAL to b, otherwise the code wont be executed
+
+#     # 3 is equal to 3
+
+# a = 'Tim'
+# b = 'Tim'
+
+# if a == b:
+#     print('a is equal to b')
+#     # a is equal to b
+
+# a = True
+
+# if a == True:
+#     print('a is True')
+#     # a is True
+
+
+# a = False
+
+# if a != True:
+#     print('a is False')
+#     # a is False
+
+
+# a = 8
+# b = 5
+
+# if a >= b:
+#     print('True')
+#     # True
+
+# ##### IF ELSE #####
+
+# a = 1
+# b = 2
+
+# if a == b:
+#     print('A equals B')
+# else:
+#     print('A not equals B')
+
+# # A not equals B
+
+# b = False
+
+# if b == True:
+#     print('B is true')
+# else:
+#     print('B is not true')
+
+# # B is not true
+
+# a = 'Maggie'
+
+# if a == True:
+#     print('A is true')
+# elif a == False:
+#     print('A is false') # we can add how many elif as required
+# else:
+#     print('A is none of the two')
+
+# # A is none of the two
+
+# boy = True
+# short = True
+
+# if boy == True or short == True:
+#     print ('He is a boy or he is short')
+# elif boy == False:
+#     print('Not a boy')
+# else:
+#     print('None of the two')
+
+# # He is a boy or he is short
+
+# if boy == True or short == False:
+#     print ('He is a boy or he is short')
+# elif boy == False:
+#     print('Not a boy')
+# else:
+#     print('None of the two')
+
+# # He is a boy or he is short
+# # because OR just need one of the statement to be True
+# # so it will still print the result
+
+# if boy == True and short == False:
+#     print ('He is a boy or he is short')
+# elif boy == False:
+#     print('Not a boy')
+# else:
+#     print('None of the two')
+
+# # None of the two
+# # with AND, we need to have both statement to be True
+
+# value = int(input('Input a value: '))
+
+# if type(value) == str:
+#     print (value + ' is a string')
+# else:
+#     print('Not a String')
+
+# code above cause an error
+
+# if we want to check whether user input is string or int, we can use code below
+
+def check_type(value):
+    if value.strip().isdigit():
+        print(value, ' is an INT')
+    else:
+        print(value + ' is a STR')
+
+check1 = input("Type here number or words")
+check_type(check1)
 
 
 
