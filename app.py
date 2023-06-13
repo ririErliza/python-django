@@ -470,14 +470,68 @@
 
 # if we want to check whether user input is string or int, we can use code below
 
-def check_type(value):
-    if value.strip().isdigit():
-        print(value, ' is an INT')
-    else:
-        print(value + ' is a STR')
+# def check_type(value):
+#     if value.strip().isdigit():
+#         print(value, ' is an INTEGER')
+#     else:
+#         print(value + ' is a STRING')
 
-check1 = input("Type here number or words")
-check_type(check1)
+# check1 = input("Type here number or words : ")
+# check_type(check1)
+
+
+# modulo
+
+# value = int(input('Input a number: '))
+
+# if value%5 == 0:
+#     print(value, 'can be divided by 5')
+# else:
+#     print(value, 'can\'t divided by 5')
+
+#-------------------------Build A Function---------------------------
+#-------------------to check if a number is EVEN or ODD--------------
+
+# num = int(input('Enter a number: '))
+
+# if num%2 == 0:
+#     print('Thas is an EVEN number')
+# else:
+#     print('That is an ODD number')
+
+
+#-------------------------DICTIONARIES---------------------------
+
+# dictinaries are used to store data values in the key value pairs
+# dictionaries are also data type like list or strings
+# changeable, we can modify them
+# dictionaries dont allow DUPLICATE (unlike list and tuple)
+# the values can be any data types
+
+my_dict = {
+    'name': 'Tim',
+    'age' : 25,
+    'is_tall' : True,
+    'nationality': 'African',
+    'Qualification': 'College',
+    'friends': ['Zoe', 'Frank', 'Nigel', 'Maddie']
+}
+
+
+print(type(my_dict)) 
+
+print(my_dict) 
+# {'name': 'Tim', 'age': 25, 'nationality': 'African', 'Qualification': 'College'}
+
+print(my_dict['name'])
+# Tim
+
+print(len(my_dict))
+# 6
+
+x = my_dict['friends']
+print(x)  #['Zoe', 'Frank', 'Nigel', 'Maddie']
+
 
 
 
