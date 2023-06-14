@@ -576,79 +576,94 @@ i = 1
 # no result is printed because AND needs both condition to be true
 
 
-#-----------------------FOR LOOPS------------------------------
+# #-----------------------FOR LOOPS------------------------------
 
-# for loops use to iterate over a sequence
-# looping over a sequence that can either be a list, tupple, dictionary, even strings, or a range of numbers
-
-
-for letter in 'Hello':
-    print(letter)
-
-# H
-# e
-# l
-# l
-# o
-
-mylist = ['ji', 'je', 'jo']
-
-for value in mylist:
-    print(value)
-
-# ji
-# je
-# jo
+# # for loops use to iterate over a sequence
+# # looping over a sequence that can either be a list, tupple, dictionary, even strings, or a range of numbers
 
 
-for value in mylist:
-    print(value)
-    if value == 'je':
-        break
+# for letter in 'Hello':
+#     print(letter)
 
-# ji
-# je
+# # H
+# # e
+# # l
+# # l
+# # o
 
-for value in mylist:
-    if value == 'je':
-        break
-    print(value)
+# mylist = ['ji', 'je', 'jo']
 
-# ji
+# for value in mylist:
+#     print(value)
 
-mydict = {
-    'name': 'john',
-    'age':13,
-    'city': 'Bonn'
-}
+# # ji
+# # je
+# # jo
 
-for value in mydict:
-    print(value)
 
-# name
-# age
-# city
+# for value in mylist:
+#     print(value)
+#     if value == 'je':
+#         break
 
-for x in range(4):
-    print(x)
-# 0
-# 1
-# 2
-# 3
+# # ji
+# # je
 
-for x in range(8,11):
-    print(x)
+# for value in mylist:
+#     if value == 'je':
+#         break
+#     print(value)
 
-# 8
-# 9
-# 10
+# # ji
 
-for x in range(13,15):
-    print(x)
-else:
-    print('Finished Looping!!')
+# mydict = {
+#     'name': 'john',
+#     'age':13,
+#     'city': 'Bonn'
+# }
 
-# 10
-# 13
-# 14
-# Finished Looping!!
+# for value in mydict:
+#     print(value)
+
+# # name
+# # age
+# # city
+
+# for x in range(4):
+#     print(x)
+# # 0
+# # 1
+# # 2
+# # 3
+
+# for x in range(8,11):
+#     print(x)
+
+# # 8
+# # 9
+# # 10
+
+# for x in range(13,15):
+#     print(x)
+# else:
+#     print('Finished Looping!!')
+
+# # 10
+# # 13
+# # 14
+# # Finished Looping!!
+
+#-----------------------2D LISTS-------------------------------
+#---------------------NESTED LOOP------------------------------
+
+# like we have multiple lists inside a list variable
+
+my_list = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+
+print(my_list)
+
+
