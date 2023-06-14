@@ -508,31 +508,147 @@
 # dictionaries dont allow DUPLICATE (unlike list and tuple)
 # the values can be any data types
 
-my_dict = {
-    'name': 'Tim',
-    'age' : 25,
-    'is_tall' : True,
-    'nationality': 'African',
-    'Qualification': 'College',
-    'friends': ['Zoe', 'Frank', 'Nigel', 'Maddie']
-}
+# my_dict = {
+#     'name': 'Tim',
+#     'age' : 25,
+#     'is_tall' : True,
+#     'nationality': 'African',
+#     'Qualification': 'College',
+#     'friends': ['Zoe', 'Frank', 'Nigel', 'Maddie']
+# }
 
 
-print(type(my_dict)) 
+# print(type(my_dict)) 
 
-print(my_dict) 
-# {'name': 'Tim', 'age': 25, 'nationality': 'African', 'Qualification': 'College'}
+# print(my_dict) 
+# # {'name': 'Tim', 'age': 25, 'nationality': 'African', 'Qualification': 'College'}
 
-print(my_dict['name'])
-# Tim
+# print(my_dict['name'])
+# # Tim
 
-print(len(my_dict))
+# print(len(my_dict))
+# # 6
+
+# x = my_dict['friends']
+# print(x)  #['Zoe', 'Frank', 'Nigel', 'Maddie']
+
+
+#----------------------WHILE LOOPS------------------------------
+
+# allow us to loop through a block of code, while a certain condition is true
+
+i = 1
+
+# while i < 6:
+#     print(i)
+#     i += 1
+
+# 1
+# 2
+# 3
+# 4
+# 5
+
+# while i < 6 or i == 6:
+#     print(i)
+#     i += 1
+# 1
+# 2
+# 3
+# 4
+# 5
 # 6
 
-x = my_dict['friends']
-print(x)  #['Zoe', 'Frank', 'Nigel', 'Maddie']
+# while i < 6 or i == 10:
+#     print(i)
+#     i += 1
+
+# 1
+# 2
+# 3
+# 4
+# 5
+
+# while i < 6 and i == 10:
+#     print(i)
+#     i += 1
+
+# no result is printed because AND needs both condition to be true
 
 
+#-----------------------FOR LOOPS------------------------------
+
+# for loops use to iterate over a sequence
+# looping over a sequence that can either be a list, tupple, dictionary, even strings, or a range of numbers
 
 
+for letter in 'Hello':
+    print(letter)
 
+# H
+# e
+# l
+# l
+# o
+
+mylist = ['ji', 'je', 'jo']
+
+for value in mylist:
+    print(value)
+
+# ji
+# je
+# jo
+
+
+for value in mylist:
+    print(value)
+    if value == 'je':
+        break
+
+# ji
+# je
+
+for value in mylist:
+    if value == 'je':
+        break
+    print(value)
+
+# ji
+
+mydict = {
+    'name': 'john',
+    'age':13,
+    'city': 'Bonn'
+}
+
+for value in mydict:
+    print(value)
+
+# name
+# age
+# city
+
+for x in range(4):
+    print(x)
+# 0
+# 1
+# 2
+# 3
+
+for x in range(8,11):
+    print(x)
+
+# 8
+# 9
+# 10
+
+for x in range(13,15):
+    print(x)
+else:
+    print('Finished Looping!!')
+
+# 10
+# 13
+# 14
+# Finished Looping!!
