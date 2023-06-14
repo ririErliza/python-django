@@ -694,3 +694,57 @@ my_list = [
 #-----------------------COMMENTS------------------------------
 
 # using this # to comment or ''' ---- '''
+
+#----------------------READING FILES---------------------------
+''' the txt file needs to be at the same folder as this app.py'''
+
+coun_file = open('countries.txt','r')
+# print('is this readable? ', coun_file.readable()) # True
+# print(coun_file.readline()) # gonna print the first line
+# # Indonesia
+# print(coun_file.readline()) # this will print the second line (it prints in sequence)
+# # Malaysia
+
+# print(coun_file.readlines()) # print everything
+# # ['Brunei\n', 'Singapore\n', 'Thailand\n', 'Kamboja\n', 'Vietnam\n', 'Laos\n', 'Philipines']
+
+# print(coun_file.read())
+
+# Indonesia
+# Malaysia
+# Brunei
+# Singapore
+# Thailand
+# Kamboja
+# Vietnam
+# Laos
+# Philipines
+
+# print(coun_file.read(3)) # Return the 3 first characters of the file
+# # Ind
+
+# print(coun_file.readlines()[3]) # Return the 4th data in list
+# # SIngapore
+
+for files in coun_file.readlines():
+    print(files)
+
+# Indonesia
+
+# Malaysia
+
+# Brunei
+
+# Singapore
+
+# Thailand
+
+# Kamboja
+
+# Vietnam
+
+# Laos
+
+# Philipines
+
+coun_file.close()
